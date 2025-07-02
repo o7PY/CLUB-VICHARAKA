@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+            /* Ensure the iframe has a white background */
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <title>ERC 2025</title>
+    </head>
+
+    <body
+        class="relative z-0 bg-cover bg-fixed bg-no-repeat h-[100vh] w-[100vw] bg-gradient-to-b from-black to-blue-900 overflow-hidden">
+
+        <div id="blob"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border bg-gradient-to-r from-green-200 to-purple-800 rounded-full"
+            style="width: 30vw; height: 30vw; max-width: 500px; max-height: 500px;">
+        </div>
+
+        <!-- Main Content -->
+        <div id="main_body" class="absolute z-20 h-[100vh] w-full overflow-y-scroll backdrop-blur-[100px] text-white">
+            <div id="header"></div>
+
+            <!-- Title -->
+            <div class="w-full p-8 flex flex-col items-center justify-center mx-auto gap-8">
+                <div class="w-full flex justify-center">
+                    <div class="p-2 w-full max-w-3xl -translate-y-10 flex-col flex items-center">
+                        <div class="text-6xl font-semibold tracking-widest p-4 border-blue-300">ERC 2025</div>
+                        <p class="text-lg text-blue-300 text-center">
+                            Team Vicharaka is a team of first- and second-year students from the IISc UG programmes
+                            participating in the European Rover Challenge (ERC) 2025. The ERC is one of the world’s
+                            leading robotics competitions for university students, held annually in Poland. ERC
+                            challenges student teams to design and build the next generation of Mars rovers to assist
+                            astronauts in future planetary exploration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="w-full flex justify-center m-8">
+                <div class="flex flex-col items-center">
+                    <div class="carousel w-full lg:w-[60vw] overflow-hidden">
+                        <div class="carousel-item aspect-video w-full p-4" id="item1">
+                            <img src="images/ERC_2025/Rover_img.png" alt="Rover Design"
+                                class="w-full h-full object-contain" />
+                        </div>
+                        <div class="carousel-item aspect-video w-full p-4" id="item2">
+                            <img src="images/URC_2025/img_1.jpg" alt="Team Photo"
+                                class="w-full h-full object-contain" />
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-2 py-2">
+                        <a href="#item1" class="btn btn-xs sm:btn-sm">1</a>
+                        <a href="#item2" class="btn btn-xs sm:btn-sm">2</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Video -->
+            <div class="w-full flex justify-center m-8">
+                <div class="w-full lg:w-[60vw] aspect-video rounded-lg overflow-hidden shadow-lg">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/HVBIjBCv-zM?si=JY62xHgkxGJtL3cJ"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Section: Team Structure -->
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Team Structure</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="https://placehold.co/600x400?text=Org+Chart" alt="Organization Chart"
+                        class="rounded-md" />
+                    <img src="images/URC_2025/img_1.jpg" alt="Team Photo" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/sayak.png" alt="John Doe"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sayak Maji</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Team Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/aldin_nath.jpg" alt="Jane Smith"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Aldrin Nath</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Technical Lead</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Mechanical -->
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Mechanical</h2>
+                <p class="mb-4 text-lg text-gray-300">
+                    Our rover features a robust six-wheel differential rocker-bogie suspension system, engineered for
+                    exceptional mobility on demanding, Mars-like terrains. Its aerospace-grade 6061 aluminium structure,
+                    precisely fabricated through CNC machining, laser cutting, welding, and other precision techniques,
+                    is designed for rapid assembly and disassembly. Weighing under 50 kg with a compact yet stable
+                    wheelbase of 93 cm by 84 cm, the rover is purpose-built for reliable performance in the challenging
+                    conditions of the European Rover Challenge.
+                </p>
+                <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+                    <li>Designed for easy field repair and modular upgrades during competitions.</li>
+                    <li>Equipped with standardized quick-connect interfaces for peripheral tools and sensors.</li>
+                    <li>Features integrated power distribution and monitoring for system safety.</li>
+                    <li>Supports future autonomy modules with ROS2-compatible architecture.</li>
+                    <li>Designed with EMI shielding to protect sensitive electronics from interference.</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="images/ERC_2025/mechanical_1.png" alt="Chassis Design" class="rounded-md" />
+                    <img src="images/ERC_2025/mechanical_2.png" alt="Suspension System" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/sayak.png" alt="Alex Johnson"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sayak Maji</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Mechanical Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/aldin_nath.jpg" alt="Aldrin Nath"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Aldrin Nath</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Mechanical Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Sricheran Katta (2).jpg" alt="Sricheran Katta"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sricheran Katta</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Mechanical Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Dhritishman Dutta.jpg" alt="Dhritishman Dutta"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Dhritishman Dutta</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Mechanical Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Sameer Rajput.jpg" alt="Sameer Rajput"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sameer Rajput</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Mechanical Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Uday Regon.jpg" alt="Uday Regon"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Uday Regon</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Mechanical Team</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Electronics -->
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Electronics</h2>
+                <p class="mb-4 text-lg text-gray-300">
+                    The rover’s electronics subsystem features a modular, robust architecture designed to reliably power
+                    and control all onboard systems. Centered around a custom power distribution board with STM32
+                    microcontroller-based safeguards, the system ensures stable and efficient operation under demanding
+                    conditions while remaining easy to maintain and upgrade. </p>
+                <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+                    <li>21 Ah, 24 V Li-ion battery providing over 180 minutes of continuous operation across all
+                        subsystems.</li>
+                    <li>Custom modular power distribution board with integrated current monitoring and multiple
+                        fail-safes for protection.</li>
+                    <li>Closed-loop PID motor control for precise speed and torque management on each wheel.</li>
+                    <li>Teensy 4.1 microcontroller supervising lower-level tasks with UART-based communication to the
+                        main controller.</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="images/ERC_2025/Elec1.png" alt="PCB Design" class="rounded-md" />
+                    <img src="images/ERC_2025/Elec2.png" alt="Power Module" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/aldin_nath.jpg" alt="Aldrin Nath"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Aldrin Nath</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Electronics Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Sagar Nath.jpg" alt="Sagar Nath"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sagar Nath</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Electronics Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Animesh Pradhan.jpg" alt="Animesh Pradhan"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Animesh Pradhan</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Electronics Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Vidhi Chauhan.jpg" alt="Vidhi Chauhan"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Vidhi Chauhan</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Electronics Team</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Robotic Arm -->
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Robotic Arm</h2>
+                <p class="mb-4 text-lg text-gray-300">
+                    Our rover’s articulated arm offers six degrees of freedom with a payload capacity of up to 8 kg,
+                    combining high-precision harmonic drives with robust stepper motor actuation. Built from
+                    lightweight, high-strength 7075 aluminium and precisely machined in-house, the arm delivers
+                    exceptional accuracy, stability, and durability, making it ideal for complex and demanding field
+                    tasks.
+                </p>
+                <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+                    <li>High-torque harmonic drives for near-zero backlash and precise motion across all joints.</li>
+                    <li>Autonomous and semi-autonomous control via micro-ROS, MoveIt 2, and a vision-guided perception
+                        system.</li>
+                    <li>Optimized structural design validated by FEA for high strength-to-weight performance.</li>
+                    <li>Two-finger gripper end-effector with object detection using ArUco markers and real-time ROS2
+                        feedback.</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="images/ERC_2025/manipulator1.png" alt="Robotic Arm" class="rounded-md" />
+                    <img src="images/ERC_2025/manipulator2.png" alt="Robotic Arm Close-up" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/nandan chowdary.jpg" alt="K. Nandan Chowdary"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">K. Nandan Chowdary</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Robotic Arm Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Sricheran Katta (2).jpg" alt="Sricheran Katta"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sricheran Katta</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Team Robotic Arm</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Adityavardhan Srivastava.jpeg" alt="Adityavardhan Srivastava"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Adityavardhan Srivastava</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Team Robotic Arm</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/mohnish.jpg" alt="L. Mohnish"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">L. Mohnish</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Team Robotic Arm</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Science -->
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Science</h2>
+                <p class="mb-4 text-lg text-gray-300">
+                    The rover’s Bio-Science Module is a four-part integrated system designed for thorough environmental
+                    and biochemical analysis of planetary analog sites. It combines precise sampling, advanced sensors,
+                    and robust mechanical handling to support in-situ science objectives at ERC. </p>
+                <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+                    <li>Rock sample weighing unit with a cushioned load-cell platform and transparent enclosure for
+                        safe, accurate specimen storage.</li>
+                    <li>Core drilling system with a contamination-resistant iris shutter and rotary funnel storage for
+                        reliable subsurface sampling.</li>
+                    <li>Analytical testing module equipped with pH, CO₂, amino acid, NIR, and Raman spectroscopy sensors
+                        for comprehensive sample analysis.</li>
+                    <li>Secondary three-DOF manipulator with a bucket-style scoop for efficient surface sampling and
+                        delivery to the testing unit.</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="images/ERC_2025/science1.png" alt="Lab Testing" class="rounded-md" />
+                    <img src="images/ERC_2025/science2.png" alt="Field Analysis" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Adityavardhan Srivastava.jpeg" alt="Adityavardhan Srivastava"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Adityavardhan Srivastava</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Science Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Ishwari Bhattacharya.jpg" alt="Ishwari Bhattacharya"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Ishwari Bhattacharya</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Science Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/sayak.png" alt="Sayak Maji"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sayak Maji</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Science Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Samyak Kasliwal.jpg" alt="Samyak Kasliwal"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Samyak Kasliwal</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Science Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Achintya Mathur.jpg" alt="Achintya Mathur"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Achintya Mathur</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Science Team</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Software -->
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Software</h2>
+                <p class="mb-4 text-lg text-gray-300">
+                    The rover’s hardware and navigation systems have been comprehensively redesigned for enhanced
+                    autonomy, accuracy, and robustness in GPS-denied environments. By integrating visual-inertial
+                    odometry, depth-based 3D SLAM, and efficient sensor fusion, the rover achieves reliable,
+                    energy-efficient navigation across challenging terrains.
+                </p>
+                <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+                    <li>10-axis IMU with depth camera-based VIO enables precise localization without GPS.</li>
+                    <li>Depth camera 3D SLAM replaces LiDAR, reducing power consumption while preserving high-resolution
+                        mapping.</li>
+                    <li>Extended Kalman Filter fuses IMU, depth, and wheel odometry data for accurate, drift-minimized
+                        navigation.</li>
+                    <li>Structured search and dynamic path planning ensure reliable target acquisition and obstacle
+                        avoidance under ROS 2.</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="images/ERC_2025/software1.png" alt="Dashboard UI" class="rounded-md" />
+                    <img src="images/ERC_2025/software2.png" alt="Code Session" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/pritesh_jogdhankar.jpg" alt="Pritesh Jogdhankar"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Pritesh Jogdhankar</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Software Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/pratham_gupta.jpg" alt="Pratham Gupta"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Pratham Gupta</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">AI/ML Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Pragnya Yadav.jpg" alt="Pragnya Yadav"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Pragnya Yadav</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Assistant Lead</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/deeptam_bhar.jpg" alt="Deeptam Bhar"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Deeptam Bhar</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Software Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Himanshi Sarode.jpg" alt="Himanshi Sarode"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Himanshi Sarode</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Software Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/krishna.jpg" alt="Krishna Gupta"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Krishna Gupta</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Software Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Swetha Reddy.jpg" alt="Swetha Reddy"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Swetha Reddy</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Software Team</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Drone -->
+
+            <section class="py-12 px-6">
+                <h2 class="text-4xl font-bold mb-6 border-l-4 pl-4 border-blue-500">Science</h2>
+                <p class="mb-4 text-lg text-gray-300">
+                    The drone is based on a lightweight TBS-500 carbon-fibre quadcopter frame, featuring a PX4-based
+                    control stack on a Cube Orange+ flight controller for robust, high-level autonomous operation. Its
+                    integrated safety, power, and communication systems ensure reliable, efficient, and secure
+                    performance for aerial support missions. </p>
+                <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+                    <li>935KV EMAX motors with 10-inch propellers powered by a 3S 4200 mAh battery deliver up to 20
+                        minutes of flight time.</li>
+                    <li>Cube Orange+ flight controller with redundant IMUs and fail-safes ensures stable and reliable
+                        flight control.</li>
+                    <li>5G telemetry and Flysky FS-i6 provide long-range command, video downlink, and manual override
+                        capability.</li>
+                    <li>Autonomous emergency landing and kill switch enhance safety and fault tolerance during
+                        mission-critical operations.</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="images/ERC_2025/drone1.png" alt="Lab Testing" class="rounded-md" />
+                    <img src="images/ERC_2025/drone2.png" alt="Field Analysis" class="rounded-md" />
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/aldin_nath.jpg" alt="Aldrin Nath"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Aldrin Nath</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Drone Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Sricheran Katta (2).jpg" alt="Sricheran Katta"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sricheran Katta</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Science Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/sayak.png" alt="Sayak Maji"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Sayak Maji</h3>
+                            <p class="text-sm text-gray-300">Batch: 2023</p>
+                            <p class="text-sm text-gray-400">Drone Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Pragnya Yadav.jpg" alt="Pragnya Yadav"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Pragnya Yadav</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Drone Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Prince soni.jpeg" alt="Prince Soni"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Prince Soni</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Drone Team</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg flex items-start gap-4 hover:bg-gray-600 transition">
+                        <img src="images/members/Adityavardhan Srivastava.jpeg" alt="Adityavardhan Srivastava"
+                            class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold text-lg">Adityavardhan Srivastava</h3>
+                            <p class="text-sm text-gray-300">Batch: 2024</p>
+                            <p class="text-sm text-gray-400">Drone Team</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div id="footer"></div>
+
+        </div>
+        <script type="module" src="./index.js"></script>
+    </body>
+
+    </html>

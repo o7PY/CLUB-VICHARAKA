@@ -1,7 +1,7 @@
 
-export  async function GenerateHeader(headerContainer){
-    const origin = window.location.origin;
-    const  headerHTML=`
+export async function GenerateHeader(headerContainer) {
+  const origin = window.location.origin;
+  const headerHTML = `
     <div class="navbar bg-transparent text-white p-4 top-0 z-10 ">
       <div class="navbar-start">
         <div class="dropdown">
@@ -44,15 +44,15 @@ export  async function GenerateHeader(headerContainer){
       <div class="navbar-end"></div>
     </div>
       `
-      if (headerContainer){
-       headerContainer.innerHTML=headerHTML
-      }
-      return true
+  if (headerContainer) {
+    headerContainer.innerHTML = headerHTML
+  }
+  return true
 }
 
-export  async function GenerateFooter(footerContainer){
-    const origin = window.location.origin;
-    const  headerHTML=`
+export async function GenerateFooter(footerContainer) {
+  const origin = window.location.origin;
+  const headerHTML = `
 <div class="divider divider-primary w-[80%] m-auto py-8"></div>
 
 <div class="footer bg-transparent text-white p-4 lg:p-10 flex flex-col md:flex-row justify-center md:justify-around gap-8 md:gap-[20vw] items-center z-10">
@@ -89,13 +89,13 @@ export  async function GenerateFooter(footerContainer){
   </div>
 </div>
 
-      `  
+      `
 
-      if (footerContainer){
-        footerContainer.innerHTML=headerHTML
+  if (footerContainer) {
+    footerContainer.innerHTML = headerHTML
 
-       }
-      return true
+  }
+  return true
 }
 
 
@@ -123,7 +123,7 @@ export async function GenerateEvents(EventsContainer) {
           <div class="collapse-content text-sm sm:text-base">
             <p class="mb-4 text-xl text-white">${event.event_detail}</p>
             
-            <div  id="${baseId+"-carousel"}"   class="flex flex-col items-center">
+            <div  id="${baseId + "-carousel"}"   class="flex flex-col items-center">
             
               <div  class=">
               </div>
@@ -132,7 +132,7 @@ export async function GenerateEvents(EventsContainer) {
           </div>
         </div>
       `;
-      
+
       const button = eventHTML.querySelector(".learn-more-btn");
       if (button) {
         button.addEventListener("click", () => {
@@ -145,7 +145,7 @@ export async function GenerateEvents(EventsContainer) {
       if (event.images_array && event.images_array.length > 0) {
         GenerateCoruoselImages(baseId, event.images_array);
       }
-      
+
 
     });
   } catch (error) {
@@ -153,18 +153,18 @@ export async function GenerateEvents(EventsContainer) {
   }
 }
 
-export async function GenerateCoruoselImages(eventBaseId,imageLinkArray) {
+export async function GenerateCoruoselImages(eventBaseId, imageLinkArray) {
   const corouselConatiner = document.getElementById(eventBaseId + "-carousel");
   const corousel = document.createElement("div")
   corousel.classList = "carousel w-full sm:w-11/12 lg:w-3/4 lg:h-[60vh] sm:h-[20vh] m-4 overflow rounded-md "
   corouselConatiner.appendChild(corousel)
-  
 
-  imageLinkArray.forEach((imageLink,index)=>{
+
+  imageLinkArray.forEach((imageLink, index) => {
     const corouselElement = document.createElement("div")
     corouselElement.classList = "carousel-item w-full p-4"
     corouselElement.id = eventBaseId + '-item' + index
-    corouselElement.innerHTML=`
+    corouselElement.innerHTML = `
     <img src="${imageLink}"
                        alt="Event photo 4"
                        class="w-full h-full object-contain  rounded-md " />
@@ -202,7 +202,7 @@ export async function GenerateActivities(activitiesContainer) {
 
     activityList.forEach((activity) => {
       const activityElement = document.createElement("div");
-      activityElement.classList="card bg-base-200 w-80 "
+      activityElement.classList = "card bg-base-200 w-80 "
       activityElement.innerHTML = `
 
           <figure class=" w-full object-cover">
@@ -238,7 +238,6 @@ export async function GenerateActivities(activitiesContainer) {
 
 
 
- 
 
 
- 
+
